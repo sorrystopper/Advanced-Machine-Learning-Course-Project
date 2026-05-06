@@ -211,6 +211,3 @@ This project builds on:
 * **Ray Tune** and **HyperOpt** for hyper-parameter optimisation.
 * **Tent** (Wang et al., ICLR 2021) — design inspiration for the
   LayerNorm-only adaptation variant in `TTA_main_csv_ln.py`.
-
-The course report and the LaTeX source accompanying this submission
-contain the full empirical analysis, ablations, and discussion.
