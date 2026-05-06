@@ -103,9 +103,7 @@ tasks, organised as `{experiment}_X{split}.csv` / `{experiment}_y{split}.csv`
 with `split ∈ {train, val, idtest, ood}`, loaded by
 `tableshift.core.csv_dataset.CSVTabularDataset`.
 
-The `--data_dir` argument is hard-coded to
-`/data/xli/skw/Advanced-ML/data/TableShift` in the three entry-point
-scripts; please override `--data_dir` if your CSVs live elsewhere.
+Please override `--data_dir` if your CSVs live elsewhere.
 TableShift induces **covariate / sub-population shift only** — the label
 sets in the ID and OOD splits are identical (binary classification for all
 six tasks).
