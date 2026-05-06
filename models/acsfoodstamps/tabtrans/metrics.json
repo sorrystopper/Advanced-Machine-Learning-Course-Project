@@ -1,0 +1,37 @@
+{
+  "experiment": "acsfoodstamps",
+  "model": "tabtransformer",
+  "best_config": {
+    "lr": 0.00025293123422145963,
+    "n_epochs": 15,
+    "weight_decay": 0.024797307165896964,
+    "ff_dropout": 0.266003479169926,
+    "attn_dropout": 0.23052808100351446,
+    "dim": 32,
+    "depth": 5,
+    "heads": 2
+  },
+  "n_epochs": 15,
+  "batch_size": 512,
+  "n_train": 629018,
+  "splits": {
+    "validation": {
+      "n": 78627,
+      "accuracy": 0.8461215612957381,
+      "balanced_accuracy": 0.6708722396813611,
+      "f1": 0.48739567004194384
+    },
+    "id_test": {
+      "n": 78628,
+      "accuracy": 0.8432237879635753,
+      "balanced_accuracy": 0.6706410770113562,
+      "f1": 0.4880601353876821
+    },
+    "ood_test": {
+      "n": 48878,
+      "accuracy": 0.81599083432219,
+      "balanced_accuracy": 0.6772493859028248,
+      "f1": 0.5065832784726794
+    }
+  }
+}

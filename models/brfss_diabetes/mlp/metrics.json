@@ -1,0 +1,35 @@
+{
+  "experiment": "brfss_diabetes",
+  "model": "mlp",
+  "best_config": {
+    "d_hidden": 512,
+    "lr": 9.599995401396429e-05,
+    "n_epochs": 95,
+    "num_layers": 2,
+    "dropouts": 0.16145538754110716,
+    "weight_decay": 0.001281312649459889
+  },
+  "n_epochs": 20,
+  "batch_size": 4096,
+  "n_train": 969229,
+  "splits": {
+    "validation": {
+      "n": 121154,
+      "accuracy": 0.8581392277597107,
+      "balanced_accuracy": 0.6512934235353716,
+      "f1": 0.39890882383800236
+    },
+    "id_test": {
+      "n": 121154,
+      "accuracy": 0.8558281195833403,
+      "balanced_accuracy": 0.6481530414981906,
+      "f1": 0.3947888153563633
+    },
+    "ood_test": {
+      "n": 209375,
+      "accuracy": 0.8234794029850746,
+      "balanced_accuracy": 0.6366427411420414,
+      "f1": 0.40849511067010225
+    }
+  }
+}

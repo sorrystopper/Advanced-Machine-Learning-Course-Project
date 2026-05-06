@@ -1,0 +1,37 @@
+{
+  "experiment": "assistments",
+  "model": "tabtransformer",
+  "best_config": {
+    "lr": 5.286821250010699e-05,
+    "n_epochs": 25,
+    "weight_decay": 0.00042663464594526565,
+    "ff_dropout": 0.2852512939342818,
+    "attn_dropout": 0.3428231676479754,
+    "dim": 64,
+    "depth": 6,
+    "heads": 4
+  },
+  "n_epochs": 20,
+  "batch_size": 256,
+  "n_train": 2132526,
+  "splits": {
+    "validation": {
+      "n": 266566,
+      "accuracy": 0.9231222286413121,
+      "balanced_accuracy": 0.8758955613713197,
+      "f1": 0.9473681507069204
+    },
+    "id_test": {
+      "n": 266566,
+      "accuracy": 0.924165122333681,
+      "balanced_accuracy": 0.8769118320017024,
+      "f1": 0.9481819463491534
+    },
+    "ood_test": {
+      "n": 1906,
+      "accuracy": 0.4648478488982162,
+      "balanced_accuracy": 0.5251396648044693,
+      "f1": 0.6199701937406855
+    }
+  }
+}

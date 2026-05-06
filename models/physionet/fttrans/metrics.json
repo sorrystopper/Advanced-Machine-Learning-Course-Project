@@ -1,0 +1,40 @@
+{
+  "experiment": "physionet",
+  "model": "ft_transformer",
+  "best_config": {
+    "lr": 0.006819046914803345,
+    "n_epochs": 5,
+    "num_layers": 5,
+    "dropouts": 0.027019242082414408,
+    "weight_decay": 0.3523914952694105,
+    "n_blocks": 2,
+    "residual_dropout": 0.1564350537450725,
+    "attention_dropout": 0.08843217703973738,
+    "ffn_dropout": 0.10265719658623407,
+    "ffn_factor": 1.5549863579277585,
+    "d_token": 256
+  },
+  "n_epochs": 5,
+  "batch_size": 4096,
+  "n_train": 1122299,
+  "splits": {
+    "validation": {
+      "n": 140287,
+      "accuracy": 0.9884522443276996,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0
+    },
+    "id_test": {
+      "n": 140288,
+      "accuracy": 0.987988994069343,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0
+    },
+    "ood_test": {
+      "n": 134402,
+      "accuracy": 0.9246737399741075,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0
+    }
+  }
+}

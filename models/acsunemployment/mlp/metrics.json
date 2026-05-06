@@ -1,0 +1,35 @@
+{
+  "experiment": "acsunemployment",
+  "model": "mlp",
+  "best_config": {
+    "d_hidden": 128,
+    "lr": 0.0005371220060156703,
+    "n_epochs": 20,
+    "num_layers": 7,
+    "dropouts": 0.2771805844766753,
+    "weight_decay": 0.0059011446048617255
+  },
+  "n_epochs": 20,
+  "batch_size": 4096,
+  "n_train": 1290914,
+  "splits": {
+    "validation": {
+      "n": 161364,
+      "accuracy": 0.9733397783892318,
+      "balanced_accuracy": 0.7063024595445209,
+      "f1": 0.5129076086956522
+    },
+    "id_test": {
+      "n": 161365,
+      "accuracy": 0.9726458649645214,
+      "balanced_accuracy": 0.703577791439369,
+      "f1": 0.506484794275492
+    },
+    "ood_test": {
+      "n": 163611,
+      "accuracy": 0.9603633007560617,
+      "balanced_accuracy": 0.7210266678395754,
+      "f1": 0.541404426843929
+    }
+  }
+}

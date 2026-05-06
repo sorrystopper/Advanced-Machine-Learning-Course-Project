@@ -1,0 +1,20 @@
+{
+  "experiment": "assistments",
+  "model": "tabtransformer",
+  "source_ckpt": "./models/assistments/tabtrans/checkpoint.pt",
+  "n_epochs": 3,
+  "batch_size": 4096,
+  "splits": {
+    "ood_test": {
+      "n": 1906,
+      "accuracy": 0.5786988457502623,
+      "balanced_accuracy": 0.5847277431600058,
+      "f1": 0.5671159029649596
+    }
+  },
+  "tta": {
+    "total_used": 5568,
+    "total_seen": 5718,
+    "fraction": 0.9737670514165793
+  }
+}

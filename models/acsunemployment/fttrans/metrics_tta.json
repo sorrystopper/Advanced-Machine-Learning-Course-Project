@@ -1,0 +1,20 @@
+{
+  "experiment": "acsunemployment",
+  "model": "ft_transformer",
+  "source_ckpt": "./models/acsunemployment/fttrans/checkpoint.pt",
+  "n_epochs": 1,
+  "batch_size": 2048,
+  "splits": {
+    "ood_test": {
+      "n": 163611,
+      "accuracy": 0.882905183636797,
+      "balanced_accuracy": 0.9375435251313939,
+      "f1": 0.46765588529509833
+    }
+  },
+  "tta": {
+    "total_used": 160095,
+    "total_seen": 163611,
+    "fraction": 0.9785100023837028
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": "acsfoodstamps",
+  "model": "tabtransformer",
+  "source_ckpt": "./models/acsfoodstamps/tabtrans/checkpoint.pt",
+  "n_epochs": 3,
+  "batch_size": 1024,
+  "splits": {
+    "ood_test": {
+      "n": 48878,
+      "accuracy": 0.6948524898727444,
+      "balanced_accuracy": 0.7506644407800384,
+      "f1": 0.550631195203519
+    }
+  },
+  "tta": {
+    "total_used": 124093,
+    "total_seen": 146634,
+    "fraction": 0.8462771253597392
+  }
+}

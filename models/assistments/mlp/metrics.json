@@ -1,0 +1,35 @@
+{
+  "experiment": "assistments",
+  "model": "mlp",
+  "best_config": {
+    "d_hidden": 512,
+    "lr": 0.005668223742217979,
+    "n_epochs": 60,
+    "num_layers": 3,
+    "dropouts": 0.10683268724164474,
+    "weight_decay": 4.493800546828754e-05
+  },
+  "n_epochs": 20,
+  "batch_size": 4096,
+  "n_train": 2132526,
+  "splits": {
+    "validation": {
+      "n": 266566,
+      "accuracy": 0.9295821672681437,
+      "balanced_accuracy": 0.8858476063927594,
+      "f1": 0.9516187648364224
+    },
+    "id_test": {
+      "n": 266566,
+      "accuracy": 0.9306288123766722,
+      "balanced_accuracy": 0.8867815049277559,
+      "f1": 0.9524404734348717
+    },
+    "ood_test": {
+      "n": 1906,
+      "accuracy": 0.583420776495278,
+      "balanced_accuracy": 0.6303538175046555,
+      "f1": 0.6769731489015459
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": "acsunemployment",
+  "model": "mlp",
+  "source_ckpt": "./models/acsunemployment/mlp/checkpoint.pt",
+  "n_epochs": 3,
+  "batch_size": 1024,
+  "splits": {
+    "ood_test": {
+      "n": 163611,
+      "accuracy": 0.8869941507600345,
+      "balanced_accuracy": 0.9328543502052865,
+      "f1": 0.472872416250891
+    }
+  },
+  "tta": {
+    "total_used": 474600,
+    "total_seen": 490833,
+    "fraction": 0.9669276515637701
+  }
+}

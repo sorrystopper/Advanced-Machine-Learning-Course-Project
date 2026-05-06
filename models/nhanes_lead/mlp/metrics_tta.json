@@ -1,0 +1,20 @@
+{
+  "experiment": "nhanes_lead",
+  "model": "mlp",
+  "source_ckpt": "./models/nhanes_lead/mlp/checkpoint.pt",
+  "n_epochs": 3,
+  "batch_size": 1024,
+  "splits": {
+    "ood_test": {
+      "n": 11466,
+      "accuracy": 0.5040118611547183,
+      "balanced_accuracy": 0.5138380484782439,
+      "f1": 0.14287867370007534
+    }
+  },
+  "tta": {
+    "total_used": 5640,
+    "total_seen": 34398,
+    "fraction": 0.16396302110587824
+  }
+}

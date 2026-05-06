@@ -1,0 +1,40 @@
+{
+  "experiment": "assistments",
+  "model": "ft_transformer",
+  "n_epochs": 45,
+  "batch_size": 4096,
+  "n_train": 2132526,
+  "splits": {
+    "validation": {
+      "n": 266566,
+      "accuracy": 0.9355619246265465,
+      "balanced_accuracy": 0.9022896543905663,
+      "f1": 0.9550877614999856
+    },
+    "id_test": {
+      "n": 266566,
+      "accuracy": 0.9365785584057982,
+      "balanced_accuracy": 0.9032631268212401,
+      "f1": 0.9558988485597868
+    },
+    "ood_test": {
+      "n": 1906,
+      "accuracy": 0.5891920251836307,
+      "balanced_accuracy": 0.6335790896719667,
+      "f1": 0.6763125258371228
+    }
+  },
+  "best_config": {
+    "lr": 0.0001283302375016612,
+    "n_epochs": 45,
+    "num_layers": 4,
+    "dropouts": 0.18118680132639342,
+    "weight_decay": 0.031012166183567915,
+    "n_blocks": 3,
+    "residual_dropout": 0.06117924465079064,
+    "attention_dropout": 0.16378824857915902,
+    "ffn_dropout": 0.3323302137016346,
+    "ffn_factor": 2.587900015962356,
+    "d_token": 512
+  }
+}

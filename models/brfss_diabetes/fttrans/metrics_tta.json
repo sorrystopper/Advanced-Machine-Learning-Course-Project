@@ -1,0 +1,20 @@
+{
+  "experiment": "brfss_diabetes",
+  "model": "ft_transformer",
+  "source_ckpt": "./models/brfss_diabetes/fttrans/checkpoint.pt",
+  "n_epochs": 1,
+  "batch_size": 2048,
+  "splits": {
+    "ood_test": {
+      "n": 209375,
+      "accuracy": 0.603524776119403,
+      "balanced_accuracy": 0.7190242859697129,
+      "f1": 0.44058224947772756
+    }
+  },
+  "tta": {
+    "total_used": 198718,
+    "total_seen": 209375,
+    "fraction": 0.9491008955223881
+  }
+}

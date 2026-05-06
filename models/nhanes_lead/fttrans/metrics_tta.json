@@ -1,0 +1,20 @@
+{
+  "experiment": "nhanes_lead",
+  "model": "ft_transformer",
+  "source_ckpt": "./models/nhanes_lead/fttrans/checkpoint.pt",
+  "n_epochs": 1,
+  "batch_size": 4096,
+  "splits": {
+    "ood_test": {
+      "n": 11466,
+      "accuracy": 0.7505668934240363,
+      "balanced_accuracy": 0.4965575678096804,
+      "f1": 0.10958904109589042
+    }
+  },
+  "tta": {
+    "total_used": 11466,
+    "total_seen": 11466,
+    "fraction": 1.0
+  }
+}

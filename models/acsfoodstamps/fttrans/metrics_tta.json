@@ -1,0 +1,20 @@
+{
+  "experiment": "acsfoodstamps",
+  "model": "ft_transformer",
+  "source_ckpt": "./models/acsfoodstamps/fttrans/checkpoint.pt",
+  "n_epochs": 1,
+  "batch_size": 4096,
+  "splits": {
+    "ood_test": {
+      "n": 48878,
+      "accuracy": 0.688837513809894,
+      "balanced_accuracy": 0.746876133626376,
+      "f1": 0.5458508764071786
+    }
+  },
+  "tta": {
+    "total_used": 38186,
+    "total_seen": 48878,
+    "fraction": 0.7812512786938909
+  }
+}

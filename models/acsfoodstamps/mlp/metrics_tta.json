@@ -1,0 +1,20 @@
+{
+  "experiment": "acsfoodstamps",
+  "model": "mlp",
+  "source_ckpt": "./models/acsfoodstamps/mlp/checkpoint.pt",
+  "n_epochs": 3,
+  "batch_size": 1024,
+  "splits": {
+    "ood_test": {
+      "n": 48878,
+      "accuracy": 0.7291214861491878,
+      "balanced_accuracy": 0.7580271878014023,
+      "f1": 0.567913321584753
+    }
+  },
+  "tta": {
+    "total_used": 121379,
+    "total_seen": 146634,
+    "fraction": 0.827768457520084
+  }
+}

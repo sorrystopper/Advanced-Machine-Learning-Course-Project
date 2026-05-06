@@ -1,0 +1,20 @@
+{
+  "experiment": "brfss_diabetes",
+  "model": "mlp",
+  "source_ckpt": "./models/brfss_diabetes/mlp/checkpoint.pt",
+  "n_epochs": 3,
+  "batch_size": 1024,
+  "splits": {
+    "ood_test": {
+      "n": 209375,
+      "accuracy": 0.17431880597014926,
+      "balanced_accuracy": 0.5000751866653557,
+      "f1": 0.29673624303863383
+    }
+  },
+  "tta": {
+    "total_used": 28073,
+    "total_seen": 628125,
+    "fraction": 0.044693333333333335
+  }
+}

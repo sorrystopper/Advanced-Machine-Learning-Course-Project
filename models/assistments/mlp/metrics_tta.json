@@ -1,0 +1,20 @@
+{
+  "experiment": "assistments",
+  "model": "mlp",
+  "source_ckpt": "./models/assistments/mlp/checkpoint.pt",
+  "n_epochs": 3,
+  "batch_size": 1024,
+  "splits": {
+    "ood_test": {
+      "n": 1906,
+      "accuracy": 0.580797481636936,
+      "balanced_accuracy": 0.6231512319151984,
+      "f1": 0.6658301965704727
+    }
+  },
+  "tta": {
+    "total_used": 4880,
+    "total_seen": 5718,
+    "fraction": 0.8534452605806226
+  }
+}

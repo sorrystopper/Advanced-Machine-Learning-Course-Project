@@ -1,0 +1,20 @@
+{
+  "experiment": "acsunemployment",
+  "model": "tabtransformer",
+  "source_ckpt": "./models/acsunemployment/tabtrans/checkpoint.pt",
+  "n_epochs": 3,
+  "batch_size": 1024,
+  "splits": {
+    "ood_test": {
+      "n": 163611,
+      "accuracy": 0.881511634303317,
+      "balanced_accuracy": 0.9331621450983079,
+      "f1": 0.46278335088399936
+    }
+  },
+  "tta": {
+    "total_used": 475705,
+    "total_seen": 490833,
+    "fraction": 0.9691789264373015
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": "physionet",
+  "model": "mlp",
+  "source_ckpt": "./models/physionet/mlp/checkpoint.pt",
+  "n_epochs": 3,
+  "batch_size": 1024,
+  "splits": {
+    "ood_test": {
+      "n": 134402,
+      "accuracy": 0.9246737399741075,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0
+    }
+  },
+  "tta": {
+    "total_used": 403201,
+    "total_seen": 403206,
+    "fraction": 0.9999875993908821
+  }
+}

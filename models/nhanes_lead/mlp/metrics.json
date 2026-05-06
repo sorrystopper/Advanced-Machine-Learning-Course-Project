@@ -1,0 +1,35 @@
+{
+  "experiment": "nhanes_lead",
+  "model": "mlp",
+  "best_config": {
+    "d_hidden": 512,
+    "lr": 0.00010871103361990614,
+    "n_epochs": 10,
+    "num_layers": 3,
+    "dropouts": 0.029375796878433946,
+    "weight_decay": 0.05777119705046561
+  },
+  "n_epochs": 10,
+  "batch_size": 4096,
+  "n_train": 11807,
+  "splits": {
+    "validation": {
+      "n": 1476,
+      "accuracy": 0.9695121951219512,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0
+    },
+    "id_test": {
+      "n": 1476,
+      "accuracy": 0.9701897018970189,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0
+    },
+    "ood_test": {
+      "n": 11466,
+      "accuracy": 0.9213326356183499,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0
+    }
+  }
+}

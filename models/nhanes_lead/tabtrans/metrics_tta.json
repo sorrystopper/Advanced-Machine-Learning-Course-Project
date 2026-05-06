@@ -1,0 +1,20 @@
+{
+  "experiment": "nhanes_lead",
+  "model": "tabtransformer",
+  "source_ckpt": "./models/nhanes_lead/tabtrans/checkpoint.pt",
+  "n_epochs": 3,
+  "batch_size": 1024,
+  "splits": {
+    "ood_test": {
+      "n": 11466,
+      "accuracy": 0.9213326356183499,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0
+    }
+  },
+  "tta": {
+    "total_used": 34398,
+    "total_seen": 34398,
+    "fraction": 1.0
+  }
+}

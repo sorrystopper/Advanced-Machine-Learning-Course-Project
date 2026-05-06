@@ -1,0 +1,40 @@
+{
+  "experiment": "acsunemployment",
+  "model": "ft_transformer",
+  "best_config": {
+    "lr": 0.06124415351963736,
+    "n_epochs": 70,
+    "num_layers": 2,
+    "dropouts": 0.11387282395989062,
+    "weight_decay": 0.5165487689930146,
+    "n_blocks": 3,
+    "residual_dropout": 0.08023629027361301,
+    "attention_dropout": 0.27180650562087366,
+    "ffn_dropout": 0.22677286682319597,
+    "ffn_factor": 1.227105710454727,
+    "d_token": 64
+  },
+  "n_epochs": 20,
+  "batch_size": 4096,
+  "n_train": 1290914,
+  "splits": {
+    "validation": {
+      "n": 161364,
+      "accuracy": 0.9736248481693562,
+      "balanced_accuracy": 0.6633804651512802,
+      "f1": 0.4560327198364008
+    },
+    "id_test": {
+      "n": 161365,
+      "accuracy": 0.9728937501936603,
+      "balanced_accuracy": 0.6605660884553177,
+      "f1": 0.448284561049445
+    },
+    "ood_test": {
+      "n": 163611,
+      "accuracy": 0.9612923336450483,
+      "balanced_accuracy": 0.6776430422956004,
+      "f1": 0.49030181086519115
+    }
+  }
+}
